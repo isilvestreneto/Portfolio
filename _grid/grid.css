@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 10px;
+  height: 700px;
+  display: grid;
+  grid-template-areas:
+    "info article article tech"
+    "info article article tech"
+    "contact article article tech";
+  grid-template-rows: 0.3fr 0.3fr 0.3fr;
+  grid-template-columns: 250px 1fr 1fr 250px;
+  overflow: hidden;
+}
+
+aside#info {
+  background-color: pink;
+  grid-area: info;
+}
+
+aside#contact {
+  background-color: green;
+  grid-area: contact;
+}
+
+article {
+  background-color: red;
+  grid-area: article;
+}
+
+section#tech {
+  background-color: purple;
+  grid-area: tech;
+}
