@@ -1,11 +1,14 @@
 {
+  "homepage": "https://isilvestreneto.github.io/portfolio",
   "name": "@portfolio/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "predeploy": "nx build portfolio --prod --base-href '/portfolio/'",
+    "deploy": "gh-pages -d dist/portfolio/browser"
   },
   "private": true,
   "dependencies": {
@@ -57,6 +60,7 @@
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-cypress": "^2.13.4",
+    "gh-pages": "^6.1.1",
     "jest": "^29.4.1",
     "jest-environment-jsdom": "^29.4.1",
     "jest-preset-angular": "~14.1.0",
