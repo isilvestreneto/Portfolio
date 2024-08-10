@@ -1,1 +1,63 @@
-<app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>
+<div class="container">
+  <div class="header">
+    <header>
+      <h1><a href="">Ivanildo Silvestre</a></h1>
+    </header>
+  </div>
+  <div class="imagem"></div>
+  <div class="about">
+    <h2>Sobre mim</h2>
+    <p>
+      Olá! Sou Ivanildo Silvestre, desenvolvedor Full-stack especializado em
+      <strong>Angular</strong> e <strong>Java</strong>. Com uma paixão por criar
+      interfaces intuitivas e sistemas robustos, trabalho para entregar soluções
+      que sejam tanto funcionais quanto elegantes. No front-end, foco no
+      Angular, complementado por conhecimentos em React e Vue. No back-end,
+      utilizo Java para desenvolver aplicações escaláveis e eficientes,
+      aplicando práticas de Programação Funcional e Microserviços.
+    </p>
+    <p>
+      Ao longo da minha carreira, participei de projetos desafiadores que
+      envolveram desde desenvolvimento mobile até integração contínua com Nx e
+      Jest. Sou formado em Análise e Desenvolvimento de Sistemas e estou sempre
+      em busca de novos desafios e oportunidades para crescer como profissional.
+      Se você precisa de um desenvolvedor dedicado e focado em resultados, estou
+      pronto para ajudar a transformar suas ideias em realidade.
+    </p>
+  </div>
+  <h2>Trabalhos anteriores</h2>
+  <div class="testimonials">
+    <h2>Depoimentos</h2>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <blockquote>
+          “Ivanildo colabora muito bem com os outros membros da equipe,
+          compartilhando conhecimentos e ajudando colegas quando necessário e
+          também mostrou uma grande habilidade para aprender e se adaptar a
+          novas tecnologias e frameworks. Seu trabalho tem sido fundamental para
+          o sucesso dos nossos projetos, especialmente em relação às entregas
+          estratégicas para nosso cliente.”
+          <footer>— VS, líder técnico.</footer>
+        </blockquote>
+      </ng-template>
+      <blockquote>
+        “Trabalhei com o Ivan enquanto estive como Coordenadora no projeto
+        [CONFIDENCIAL] e posso dizer que ele é um profissional completo. Seus
+        pontos fortes são comprometimento, organização, dedicação e empenho.
+        Está em busca constante de aprimorar a parte técnica. É proativo e está
+        sempre disponível para apoiar o time, o que contribui diretamente para
+        que o ambiente de trabalho seja colaborativo e agradável.”
+        <footer>— DP, coordenadora de projeto.</footer>
+      </blockquote>
+      <blockquote>
+        <footer>— JR, product owner.</footer>
+      </blockquote>
+      <blockquote>
+        <footer>— AF, squad leader.</footer>
+      </blockquote>
+      <!-- Adicione mais slides conforme necessário -->
+    </owl-carousel-o>
+  </div>
+  <h2>Contato</h2>
+  <router-outlet></router-outlet>
+</div>

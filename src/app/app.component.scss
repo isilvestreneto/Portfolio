@@ -1,0 +1,35 @@
+.header {
+  position: absolute;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.imagem {
+  background-color: rgb(232, 180, 180);
+  height: 300px;
+}
+
+.about {
+  padding: 20px;
+}
+
+.testimonials {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+p {
+  text-indent: 20px;
+}

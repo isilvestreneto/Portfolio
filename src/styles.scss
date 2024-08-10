@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+/* Remove todas as margens padrão */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Herda fontes para formulários */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Define altura mínima para o body e utiliza flexbox para garantir que a aplicação preencha toda a tela */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Corrige ajuste de tamanho de texto no Safari */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Configurações básicas de tipografia */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilização para imagens */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Estilização para botões */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Estilização para formulários */
+input,
+textarea,
+button,
+select {
+  border: none;
+  outline: none;
+}
+
+/* Remover setas dos inputs de número no Chrome, Firefox e Safari */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Remove setas do input de número no Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Remove os highlights de seleção no iOS */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/* Estilo básico para asterisco obrigatório */
+.required:after {
+  content: '*';
+  color: red;
+  margin-left: 4px;
+}
