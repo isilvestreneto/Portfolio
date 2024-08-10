@@ -4,10 +4,12 @@
       <h1><a href="">Ivanildo Silvestre</a></h1>
     </header>
   </div>
+
   <div class="imagem"></div>
+
   <div class="about">
     <h2>Sobre mim</h2>
-    <p>
+    <p class="indent">
       Olá! Sou Ivanildo Silvestre, desenvolvedor Full-stack especializado em
       <strong>Angular</strong> e <strong>Java</strong>. Com uma paixão por criar
       interfaces intuitivas e sistemas robustos, trabalho para entregar soluções
@@ -16,7 +18,7 @@
       utilizo Java para desenvolver aplicações escaláveis e eficientes,
       aplicando práticas de Programação Funcional e Microserviços.
     </p>
-    <p>
+    <p class="indent">
       Ao longo da minha carreira, participei de projetos desafiadores que
       envolveram desde desenvolvimento mobile até integração contínua com Nx e
       Jest. Sou formado em Análise e Desenvolvimento de Sistemas e estou sempre
@@ -25,39 +27,109 @@
       pronto para ajudar a transformar suas ideias em realidade.
     </p>
   </div>
-  <h2>Trabalhos anteriores</h2>
+
+  <div class="projects">
+    <h2>Trabalhos anteriores</h2>
+  </div>
+  
   <div class="testimonials">
     <h2>Depoimentos</h2>
-    <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide>
-        <blockquote>
-          “Ivanildo colabora muito bem com os outros membros da equipe,
-          compartilhando conhecimentos e ajudando colegas quando necessário e
-          também mostrou uma grande habilidade para aprender e se adaptar a
-          novas tecnologias e frameworks. Seu trabalho tem sido fundamental para
-          o sucesso dos nossos projetos, especialmente em relação às entregas
-          estratégicas para nosso cliente.”
-          <footer>— VS, líder técnico.</footer>
-        </blockquote>
-      </ng-template>
-      <blockquote>
-        “Trabalhei com o Ivan enquanto estive como Coordenadora no projeto
-        [CONFIDENCIAL] e posso dizer que ele é um profissional completo. Seus
-        pontos fortes são comprometimento, organização, dedicação e empenho.
-        Está em busca constante de aprimorar a parte técnica. É proativo e está
-        sempre disponível para apoiar o time, o que contribui diretamente para
-        que o ambiente de trabalho seja colaborativo e agradável.”
-        <footer>— DP, coordenadora de projeto.</footer>
-      </blockquote>
-      <blockquote>
-        <footer>— JR, product owner.</footer>
-      </blockquote>
-      <blockquote>
-        <footer>— AF, squad leader.</footer>
-      </blockquote>
-      <!-- Adicione mais slides conforme necessário -->
-    </owl-carousel-o>
+    <div class="testimonials">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <blockquote>
+            “Ivanildo colabora muito bem com os outros membros da equipe,
+            compartilhando conhecimentos e ajudando colegas quando necessário e
+            também mostrou uma grande habilidade para aprender e se adaptar a
+            novas tecnologias e frameworks. Seu trabalho tem sido fundamental
+            para o sucesso dos nossos projetos, especialmente em relação às
+            entregas estratégicas para nosso cliente.”
+            <footer>— VS, líder técnico.</footer>
+          </blockquote>
+        </ng-template>
+        <ng-template carouselSlide>
+          <blockquote>
+            “Trabalhei com o Ivan enquanto estive como Coordenadora no projeto
+            [CONFIDENCIAL] e posso dizer que ele é um profissional completo.
+            Seus pontos fortes são comprometimento, organização, dedicação e
+            empenho. Está em busca constante de aprimorar a parte técnica. É
+            proativo e está sempre disponível para apoiar o time, o que
+            contribui diretamente para que o ambiente de trabalho seja
+            colaborativo e agradável.”
+            <footer>— DP, coordenadora de projeto.</footer>
+          </blockquote></ng-template
+        >
+        <ng-template carouselSlide>
+          <blockquote>
+            O Ivan é um profissional de alta performance. Em constante
+            crescimento, ele está sempre disponível, reciclando o conhecimento e
+            se aperfeiçoando tecnicamente. O melhor de tudo é que não foge de
+            trabalho e busca sempre o melhor para o processo. Ivan, você vai
+            longe. Estarei sempre na torcida para seu sucesso e progresso. É um
+            imenso prazer tê-lo na equipe, ter com quem contar no mundo
+            corporativo faz a diferença. Parabéns e continue exalando o seu
+            talento por onde for!
+            <footer>— JR, product owner.</footer>
+          </blockquote></ng-template
+        >
+        <ng-template carouselSlide>
+          <blockquote>
+            O Ivan tem uma capacidade ímpar de lidar com várias prioridades em
+            simultâneo, com prazos apertados, sem nunca perder o controle.
+            Durante o nosso trabalho juntos, vi muitas vezes o Ivan
+            destacando-se e sempre evoluindo tecnicamente nos desafios que
+            surgiram. Vale destacar que o Ivan é muito determinado e pró-ativo,
+            buscando sempre a melhor opção para o cliente/empresa. Com toda
+            certeza posso dizer que ele é um excelente profissional com uma
+            carreira em ascensão. Foi um prazer imenso trabalhar e contribuir
+            com o crescimento profissional dele.
+            <footer>— AF, squad leader.</footer>
+          </blockquote></ng-template
+        >
+      </owl-carousel-o>
+    </div>
   </div>
-  <h2>Contato</h2>
+
+  <div class="contact">
+    <h2>Contato</h2>
+    <p>
+      Se você estiver interessado em discutir um projeto, colaboração, ou apenas
+      quiser bater um papo, sinta-se à vontade para me enviar uma mensagem!
+    </p>
+    <div class="contact-details">
+      <div class="contact-info">
+        <i class="fas fa-envelope fa-2xl"></i>
+        <p>
+          <a href="mailto:isilvestreneto@gmail.com"
+            >isilvestreneto&#64;gmail.com</a
+          >
+        </p>
+      </div>
+      <div class="contact-info">
+        <i class="fas fa-phone fa-2xl"></i>
+        <p><a href="tel:+5586999268906">+55 86 9 9926-8906</a></p>
+      </div>
+      <div class="contact-info">
+        <i class="fab fa-linkedin fa-2xl"></i>
+        <p>
+          <a href="https://www.linkedin.com/in/ivanildosilvestre"
+            >linkedin.com/in/ivanildosilvestre</a
+          >
+        </p>
+      </div>
+      <div class="contact-info">
+        <i class="fab fa-github fa-2xl"></i>
+        <p>
+          <a href="https://github.com/isilvestreneto"
+            >github.com/isilvestreneto</a
+          >
+        </p>
+      </div>
+      <div class="contact-info">
+        <i class="fas fa-map-marker-alt fa-2xl"></i>
+        <p>São Paulo, Brazil</p>
+      </div>
+    </div>
+  </div>
   <router-outlet></router-outlet>
 </div>
